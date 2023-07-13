@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle-btn" />
+        <label for="toggle-btn" class="toggle-label"></label>
+      </div>
+      <input
+        name="name"
+        type="text"
+        class="feedback-input"
+        placeholder="Name"
+      />
+      <input
+        name="email"
+        type="text"
+        class="feedback-input"
+        placeholder="Email"
+      />
+      <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Comment"
+      ></textarea>
+      <input type="submit" value="SUBMIT" />
+    </div>
+    <div class="category-card hidden" id="modal">
+      <div class="content">
+        <p>Terima <span id="user-name"></span> Telah Menghubungi Kami</p>
+      </div>
+      <button id="close-button">
+        <span>Tutup</span>
+      </button>
+    </div>
+  </body>
+</html>
